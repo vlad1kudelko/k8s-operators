@@ -29,6 +29,7 @@ helm upgrade --install percona-operator-crds \
     --create-namespace
 helm upgrade --install percona-operator \
     percona/psmdb-operator \
+    --set watchAllNamespaces=true \
     --namespace percona-system \
     --create-namespace
 ```
