@@ -1,4 +1,6 @@
-# ☸️ Установка операторов в Kubernetes
+# k8s-operators
+
+## Установка операторов в kubernetes
 
 ```bash
 # Strimzi (Kafka)
