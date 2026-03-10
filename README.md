@@ -17,3 +17,16 @@ helm upgrade --install cnpg-operator \
     --namespace cnpg-system \
     --create-namespace
 ```
+
+```bash
+# Percona (MongoDB)
+helm repo add percona https://percona.github.io/percona-helm-charts
+helm upgrade --install percona-operator-crds \
+    percona/psmdb-operator-crds \
+    --namespace percona-system \
+    --create-namespace
+helm upgrade --install percona-operator \
+    percona/psmdb-operator \
+    --namespace percona-system \
+    --create-namespace
+```
