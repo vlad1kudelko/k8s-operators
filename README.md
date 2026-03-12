@@ -35,6 +35,7 @@ helm upgrade --install percona-operator \
 ```
 
 ```bash
+# Redis OT-Container
 helm repo add otredis https://ot-container-kit.github.io/helm-charts
 helm upgrade --install redis-operator \
     otredis/redis-operator \
