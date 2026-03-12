@@ -33,3 +33,11 @@ helm upgrade --install percona-operator \
     --namespace percona-system \
     --create-namespace
 ```
+
+```bash
+helm repo add otredis https://ot-container-kit.github.io/helm-charts
+helm upgrade --install redis-operator \
+    otredis/redis-operator \
+    --namespace redis-system \
+    --create-namespace
+```
