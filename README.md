@@ -48,6 +48,6 @@ helm upgrade --install redis-operator \
 helm repo add seaweedfs-operator https://seaweedfs.github.io/seaweedfs-operator
 helm upgrade --install seaweedfs-operator \
     seaweedfs-operator/seaweedfs-operator \
-    --namespace seaweedfs-system \
+    --namespace s3-system \
     --create-namespace
 ```
