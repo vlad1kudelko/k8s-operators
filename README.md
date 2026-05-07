@@ -46,7 +46,7 @@ helm upgrade --install redis-operator \
 ```bash
 # Seaweedfs (S3)
 helm repo add seaweedfs-operator https://seaweedfs.github.io/seaweedfs-operator
-helm update --install seaweedfs-operator \
+helm upgrade --install seaweedfs-operator \
     seaweedfs-operator/seaweedfs-operator \
     --namespace seaweedfs-system \
     --create-namespace
